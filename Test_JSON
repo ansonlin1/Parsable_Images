@@ -1,0 +1,508 @@
+{
+    "method": "getData",
+    "result": {
+        "success": {
+            "seqId": 84467492,
+            "stepExecutionData": [
+                {
+                    "stepId": "a5512327-b878-43ed-bba3-237561f93a18",
+                    "jobBaseStepId": "ff9660b7-b916-4e60-bdc1-dc2dbe2659ab",
+                    "stepComplete": true,
+                    "fieldExecutionData": [],
+                    "isComplete": true,
+                    "isCompleteLastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                    "isCompleteLastUpdatedAt": 1619014614,
+                    "seqId": 84467492,
+                    "lastUpdatedAt": 1619014614,
+                    "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf"
+                },
+                {
+                    "stepId": "3e192848-d66e-4eae-80f5-b9d8b283bb38",
+                    "jobBaseStepId": "916d3190-5daf-4b8b-8fef-199598798263",
+                    "stepComplete": true,
+                    "fieldExecutionData": [
+                        {
+                            "fieldId": "225cf2d9-f57e-4969-8a09-d4937dde48d3",
+                            "seqId": 84466221,
+                            "execData": {
+                                "option": "CORTEVA : NA : USA : LITCHFIELD, IL : PRODUCTION"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014109
+                        },
+                        {
+                            "fieldId": "fd1eac0c-bcff-41c5-80e7-da1cd378fd3e",
+                            "seqId": 84466317,
+                            "execData": {
+                                "text": "boxes fell off lift loading the carts"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014149
+                        },
+                        {
+                            "fieldId": "0fdf934d-7a96-40b6-bad3-b23a038d6461",
+                            "seqId": 84466383,
+                            "execData": {
+                                "date": 1619014140
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014180
+                        },
+                        {
+                            "fieldId": "c59b0017-c98a-427b-af22-7ff59d1de02b",
+                            "seqId": 84466390,
+                            "execData": {
+                                "date": 1619014140
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014185
+                        },
+                        {
+                            "fieldId": "86121bc1-62d9-43c8-8e91-0ba655eb0007",
+                            "seqId": 84466402,
+                            "execData": {
+                                "option": "Property Damage"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014193
+                        },
+                        {
+                            "fieldId": "3963b986-0082-4f77-af66-28c4230b26e3",
+                            "seqId": 84466530,
+                            "execData": {
+                                "text": "warehouse 1 "
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014255
+                        },
+                        {
+                            "fieldId": "7efb9ed0-bb34-47d8-9548-8fa24c3b86ff",
+                            "seqId": 84466909,
+                            "execData": {
+                                "text": "operator was loading a stack of 3 nested boxes and clipped the stack in front from the boxes while turning in toward the cart and a base broke and the stack tipped off of the forks and tumbled down onto the trailer and the floor."
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014375
+                        },
+                        {
+                            "fieldId": "c68696d3-9d80-4bdf-9691-6eb13e42610f",
+                            "seqId": 84466910,
+                            "execData": {
+                                "option": "No"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014380
+                        },
+                        {
+                            "fieldId": "436ca28c-b4e9-42b1-aa66-a7c37e41e8ca",
+                            "seqId": 84466930,
+                            "execData": {
+                                "option": "Yes"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014384
+                        },
+                        {
+                            "fieldId": "45dc47da-f51c-4257-9bea-4e1ce4050dc0",
+                            "seqId": 84466941,
+                            "execData": {
+                                "option": "No"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014386
+                        },
+                        {
+                            "fieldId": "95cc7edf-8655-46b2-8708-158637d3cf34",
+                            "seqId": 84466958,
+                            "execData": {
+                                "option": "Yes"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014391
+                        },
+                        {
+                            "fieldId": "372487b8-d32a-4c41-b346-c631ab0a97c3",
+                            "seqId": 84466974,
+                            "execData": {
+                                "option": "Yes"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014395
+                        },
+                        {
+                            "fieldId": "935705d3-0942-439f-b05b-b2c3341eb7e1",
+                            "seqId": 84466994,
+                            "execData": {
+                                "option": "No"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014402
+                        },
+                        {
+                            "fieldId": "bc83dcde-f2f5-41dd-9516-69458a4e1690",
+                            "seqId": 84467001,
+                            "execData": {
+                                "option": "No"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014404
+                        },
+                        {
+                            "fieldId": "2db7e118-0daa-4963-ac4e-0f7c04c3fbc5",
+                            "seqId": 84467009,
+                            "execData": {
+                                "option": "No"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014410
+                        },
+                        {
+                            "fieldId": "e542164f-becf-4f19-b51b-4f3bdbddb870",
+                            "seqId": 84467016,
+                            "execData": {
+                                "option": "No"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014412
+                        }
+                    ],
+                    "isComplete": true,
+                    "isCompleteLastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                    "isCompleteLastUpdatedAt": 1619014433,
+                    "seqId": 84467056,
+                    "lastUpdatedAt": 1619014109,
+                    "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf"
+                },
+                {
+                    "stepId": "bf0f6164-7a5b-48c8-858e-f0df297bad01",
+                    "jobBaseStepId": "48cb4eed-90b8-44e1-a4ed-3e048d922b76",
+                    "stepComplete": true,
+                    "fieldExecutionData": [
+                        {
+                            "fieldId": "e8e18229-d938-4fd8-b30a-38cac8992133",
+                            "seqId": 84467057,
+                            "execData": {
+                                "text": "Plant (SITE)"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014434
+                        },
+                        {
+                            "fieldId": "7af195f9-da91-4fcb-b8f8-6d0c214ea5ca",
+                            "seqId": 84467058,
+                            "execData": {
+                                "text": "Production Technician"
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014434
+                        }
+                    ],
+                    "isComplete": true,
+                    "isCompleteLastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                    "isCompleteLastUpdatedAt": 1619014599,
+                    "seqId": 84467446,
+                    "lastUpdatedAt": 1619014434,
+                    "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf"
+                },
+                {
+                    "stepId": "59125bfd-e51d-4733-9901-ed292b1170c7",
+                    "jobBaseStepId": "a08f7113-079d-4691-bc68-097325a1de2f",
+                    "stepComplete": true,
+                    "fieldExecutionData": [
+                        {
+                            "fieldId": "4177bea0-ca4e-49a2-8552-c50dba0b5d4b",
+                            "seqId": 84467236,
+                            "execData": {
+                                "documents": {
+                                    "documentIds": [
+                                        "9801febd-8346-457d-8a39-2d614127ad23"
+                                    ]
+                                }
+                            },
+                            "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                            "lastUpdatedAt": 1619014513,
+                            "documents": [
+                                {
+                                    "id": "9801febd-8346-457d-8a39-2d614127ad23",
+                                    "mimeType": "image/jpeg",
+                                    "name": "image",
+                                    "size": 223939,
+                                    "teamId": "f0b1ad0a-e589-413e-bf9d-3fdaf7590df8",
+                                    "isPending": false,
+                                    "md5Checksum": "5b9eb466eac0fa0700f770272f527a65",
+                                    "caption": "",
+                                    "thumbnailId": "ffb03222-317c-4454-bda1-f970365ac578",
+                                    "position": 0,
+                                    "creatorId": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                    "sourcePlatform": "iOS",
+                                    "createdAt": 1619014513
+                                }
+                            ]
+                        }
+                    ],
+                    "isComplete": true,
+                    "isCompleteLastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                    "isCompleteLastUpdatedAt": 1619014574,
+                    "seqId": 84467365,
+                    "lastUpdatedAt": 1619014513,
+                    "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf"
+                }
+            ],
+            "jobCompletedAt": 1619014969,
+            "snippets": [
+                {
+                    "stepExecData": {
+                        "stepId": "a5512327-b878-43ed-bba3-237561f93a18",
+                        "jobBaseStepId": "ff9660b7-b916-4e60-bdc1-dc2dbe2659ab",
+                        "stepComplete": true,
+                        "fieldExecutionData": [],
+                        "isComplete": true,
+                        "isCompleteLastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                        "isCompleteLastUpdatedAt": 1619014614,
+                        "seqId": 84467492,
+                        "lastUpdatedAt": 1619014614,
+                        "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf"
+                    }
+                },
+                {
+                    "stepExecData": {
+                        "stepId": "3e192848-d66e-4eae-80f5-b9d8b283bb38",
+                        "jobBaseStepId": "916d3190-5daf-4b8b-8fef-199598798263",
+                        "stepComplete": true,
+                        "fieldExecutionData": [
+                            {
+                                "fieldId": "225cf2d9-f57e-4969-8a09-d4937dde48d3",
+                                "seqId": 84466221,
+                                "execData": {
+                                    "option": "CORTEVA : NA : USA : LITCHFIELD, IL : PRODUCTION"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014109
+                            },
+                            {
+                                "fieldId": "fd1eac0c-bcff-41c5-80e7-da1cd378fd3e",
+                                "seqId": 84466317,
+                                "execData": {
+                                    "text": "boxes fell off lift loading the carts"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014149
+                            },
+                            {
+                                "fieldId": "0fdf934d-7a96-40b6-bad3-b23a038d6461",
+                                "seqId": 84466383,
+                                "execData": {
+                                    "date": 1619014140
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014180
+                            },
+                            {
+                                "fieldId": "c59b0017-c98a-427b-af22-7ff59d1de02b",
+                                "seqId": 84466390,
+                                "execData": {
+                                    "date": 1619014140
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014185
+                            },
+                            {
+                                "fieldId": "86121bc1-62d9-43c8-8e91-0ba655eb0007",
+                                "seqId": 84466402,
+                                "execData": {
+                                    "option": "Property Damage"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014193
+                            },
+                            {
+                                "fieldId": "3963b986-0082-4f77-af66-28c4230b26e3",
+                                "seqId": 84466530,
+                                "execData": {
+                                    "text": "warehouse 1 "
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014255
+                            },
+                            {
+                                "fieldId": "7efb9ed0-bb34-47d8-9548-8fa24c3b86ff",
+                                "seqId": 84466909,
+                                "execData": {
+                                    "text": "operator was loading a stack of 3 nested boxes and clipped the stack in front from the boxes while turning in toward the cart and a base broke and the stack tipped off of the forks and tumbled down onto the trailer and the floor."
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014375
+                            },
+                            {
+                                "fieldId": "c68696d3-9d80-4bdf-9691-6eb13e42610f",
+                                "seqId": 84466910,
+                                "execData": {
+                                    "option": "No"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014380
+                            },
+                            {
+                                "fieldId": "436ca28c-b4e9-42b1-aa66-a7c37e41e8ca",
+                                "seqId": 84466930,
+                                "execData": {
+                                    "option": "Yes"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014384
+                            },
+                            {
+                                "fieldId": "45dc47da-f51c-4257-9bea-4e1ce4050dc0",
+                                "seqId": 84466941,
+                                "execData": {
+                                    "option": "No"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014386
+                            },
+                            {
+                                "fieldId": "95cc7edf-8655-46b2-8708-158637d3cf34",
+                                "seqId": 84466958,
+                                "execData": {
+                                    "option": "Yes"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014391
+                            },
+                            {
+                                "fieldId": "372487b8-d32a-4c41-b346-c631ab0a97c3",
+                                "seqId": 84466974,
+                                "execData": {
+                                    "option": "Yes"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014395
+                            },
+                            {
+                                "fieldId": "935705d3-0942-439f-b05b-b2c3341eb7e1",
+                                "seqId": 84466994,
+                                "execData": {
+                                    "option": "No"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014402
+                            },
+                            {
+                                "fieldId": "bc83dcde-f2f5-41dd-9516-69458a4e1690",
+                                "seqId": 84467001,
+                                "execData": {
+                                    "option": "No"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014404
+                            },
+                            {
+                                "fieldId": "2db7e118-0daa-4963-ac4e-0f7c04c3fbc5",
+                                "seqId": 84467009,
+                                "execData": {
+                                    "option": "No"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014410
+                            },
+                            {
+                                "fieldId": "e542164f-becf-4f19-b51b-4f3bdbddb870",
+                                "seqId": 84467016,
+                                "execData": {
+                                    "option": "No"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014412
+                            }
+                        ],
+                        "isComplete": true,
+                        "isCompleteLastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                        "isCompleteLastUpdatedAt": 1619014433,
+                        "seqId": 84467056,
+                        "lastUpdatedAt": 1619014109,
+                        "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf"
+                    }
+                },
+                {
+                    "stepExecData": {
+                        "stepId": "bf0f6164-7a5b-48c8-858e-f0df297bad01",
+                        "jobBaseStepId": "48cb4eed-90b8-44e1-a4ed-3e048d922b76",
+                        "stepComplete": true,
+                        "fieldExecutionData": [
+                            {
+                                "fieldId": "e8e18229-d938-4fd8-b30a-38cac8992133",
+                                "seqId": 84467057,
+                                "execData": {
+                                    "text": "Plant (SITE)"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014434
+                            },
+                            {
+                                "fieldId": "7af195f9-da91-4fcb-b8f8-6d0c214ea5ca",
+                                "seqId": 84467058,
+                                "execData": {
+                                    "text": "Production Technician"
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014434
+                            }
+                        ],
+                        "isComplete": true,
+                        "isCompleteLastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                        "isCompleteLastUpdatedAt": 1619014599,
+                        "seqId": 84467446,
+                        "lastUpdatedAt": 1619014434,
+                        "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf"
+                    }
+                },
+                {
+                    "stepExecData": {
+                        "stepId": "59125bfd-e51d-4733-9901-ed292b1170c7",
+                        "jobBaseStepId": "a08f7113-079d-4691-bc68-097325a1de2f",
+                        "stepComplete": true,
+                        "fieldExecutionData": [
+                            {
+                                "fieldId": "4177bea0-ca4e-49a2-8552-c50dba0b5d4b",
+                                "seqId": 84467236,
+                                "execData": {
+                                    "documents": {
+                                        "documentIds": [
+                                            "9801febd-8346-457d-8a39-2d614127ad23"
+                                        ]
+                                    }
+                                },
+                                "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                "lastUpdatedAt": 1619014513,
+                                "documents": [
+                                    {
+                                        "id": "9801febd-8346-457d-8a39-2d614127ad23",
+                                        "mimeType": "image/jpeg",
+                                        "name": "image",
+                                        "size": 223939,
+                                        "teamId": "f0b1ad0a-e589-413e-bf9d-3fdaf7590df8",
+                                        "isPending": false,
+                                        "md5Checksum": "5b9eb466eac0fa0700f770272f527a65",
+                                        "caption": "",
+                                        "thumbnailId": "ffb03222-317c-4454-bda1-f970365ac578",
+                                        "position": 0,
+                                        "creatorId": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                                        "sourcePlatform": "iOS",
+                                        "createdAt": 1619014513
+                                    }
+                                ]
+                            }
+                        ],
+                        "isComplete": true,
+                        "isCompleteLastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf",
+                        "isCompleteLastUpdatedAt": 1619014574,
+                        "seqId": 84467365,
+                        "lastUpdatedAt": 1619014513,
+                        "lastUpdatedById": "f8c6e9f4-978e-42eb-a26f-732c87529adf"
+                    }
+                }
+            ],
+            "jobId": "04c5c5b8-4464-4ff2-854a-8a84aec7e402"
+        }
+    }
+}
