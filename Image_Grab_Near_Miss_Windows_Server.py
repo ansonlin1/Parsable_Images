@@ -4,8 +4,8 @@ from os.path import expanduser
 import logging
 import time
 
+#Change to Directory
 os.chdir('E:')
-logFile = os.getcwd() + "/Near_Miss_Photos/" + "LogFile.log"
 
 # If Python Images Folder doesn't exist create it
 if not os.path.isdir(os.path.join(os.getcwd(), "Near_Miss_Photos")):
@@ -20,6 +20,7 @@ class Parsable():
 		"""Initialize all useful information"""
 
 		self.production_team_id = "f0b1ad0a-e589-413e-bf9d-3fdaf7590df8"
+		# self.sandbox_team_id = "7bd5118a-9e55-44e7-992d-ba30854e31ef" 
 
 		#TODO: MUST ADD TOKEN
 		self.authToken = 
@@ -92,13 +93,11 @@ class Parsable():
 
 		# Get job data Request
 		job_list_response = requests.request('POST', url=url, data=None, json=payload, headers=self.headers)
-
 		# Make sure request was successful
 		if job_list_response.status_code == 200:
 			# Get JSON response object
 			jsonRespose = job_list_response.json()
-
-			# Make sure JSON object is good
+ 			# Make sure JSON object is good
 			if not ("err" in jsonRespose['result']) and not ("exception" in jsonRespose):
 				# Return a job list from json response
 				return jsonRespose['result']['success']["jobs"]
@@ -121,9 +120,13 @@ class Parsable():
 		"""
 
 		logging.info(jobObject["lookupId"] + " - Started")
-		beforeJob = time.time()
 		# Check to see if job is already downloaded
-		if not os.path.exists(os.path.join(self.photo_dest, jobObject["lookupId"])):
+		if os.path.exists(os.path.join(self.photo_dest, jobObject["lookupId"])):
+			logging.info(jobObject["lookupId"] + " - Already Downloaded")
+		else:
+			# Create folder to hold all images related to this job
+			os.mkdir(os.path.join(self.photo_dest, jobObject["lookupId"]))
+
 			# Build the first API call which gets the job data based on the JobUUID value.
 			url = self.baseURL + "jobs#getData"
 			payload = {
@@ -156,8 +159,6 @@ class Parsable():
 				# 	logging.error(str(jsonRespose["result"]["err"]["errorCode"]) + " - JSON Object Error!")
 			else:
 				logging.error(str(job_data_response.status_code) + " - GetData POST Request Unsuccessful!")
-		afterJob = time.time()
-		logging.info(jobObject["lookupId"] + " - Already Downloaded")
 
 	def get_all_document_ids(self, jobData, jobLookupId):
 		"""
@@ -166,59 +167,45 @@ class Parsable():
 		Parameters:
 			jobLookupId (string): Look up ID of the specific job. I.e. Job-xxxxx
 			jobData (Object): Job data object that includes all collected data from job.
-
-		Returns:
-			Document List: A list of tuples that contain (jobLookupId, documentId, fieldId)
 		"""
 
-		#List of Tuples that contain (jobLookupId, documentId, fieldId)
-		document_list = []
-
 		# GRAB ALL IMAGE IDs IN JOB
-		# Loop through all templates in the job
-		for template in jobData["snippets"]:
+		# Loop through all steps in the job
+		for job_step in jobData["snippets"]:
 			# Make sure it is a regular step
-			# TODO: Add else if statements if needd for StepGroup
-			if "stepExecData" in template:
-				# Loop through all regular steps in the template, excluding 
-				for step in template["stepExecData"]["fieldExecutionData"]:
+			# TODO: Add else if statements if need for StepGroup
+			if "stepExecData" in job_step:
+				# Loop through step content (input)
+				for job_input in job_step["stepExecData"]["fieldExecutionData"]:
 					# CHECK to see if it is an image input
-					if "documents" in step:
-						# Grab the first image ID in the image list
-						imageId = step["documents"][0]["id"]
-						# Tuple that contains (jobLookupId, documentId, fieldId)
-						documentTuple = (jobLookupId, imageId, step["fieldId"])
-						# Append document Tuple to the document list
-						document_list.append(documentTuple)
-						# Download Image
-						# Call can be moved outside of this function. Only here to speed things up.
-						self.download_document(documentTuple)
+					if "documents" in job_input:
+						for job_image in job_input["documents"]:
+							# Grab the image ID in the image list
+							imageId = job_image["id"]
+							# Tuple that contains (jobLookupId, documentId)
+							documentTuple = (jobLookupId, imageId)
+							# Download Image
+							# Call can be moved outside of this function. Only here to speed things up.
+							self.download_document(documentTuple)
 					# CHECK to see if it is an signature input
-					elif "document" in step:
+					elif "document" in job_input:
 						# Grab Signature ID
-						signatureId = step["document"]["id"]
-						# Tuple that contains (jobLookupId, documentId, fieldId)
-						documentTuple = (jobLookupId, signatureId, step["fieldId"])
-						# Append document Tuple to the document list
-						document_list.append(documentTuple)
+						signatureId = job_input["document"]["id"]
+						# Tuple that contains (jobLookupId, documentId)
+						documentTuple = (jobLookupId, signatureId)
 						# Download Signature
 						# Call can be moved outside of this function. Only here to speed things up.
 						self.download_document(documentTuple)
 					else:
 						logging.info("Not an image.")
-		return document_list
 
 	def download_document(self, documentInfo):
 		"""
 		Download document based on the ID.
 
 		Parameters:
-			documentInfo (Tuple): Tuple that contains (jobLookupId, documentId, fieldId).
+			documentInfo (Tuple): Tuple that contains (jobLookupId, documentId).
 		"""
-		# If folder doen't exist create it then download image else download image to existng folder
-		if not os.path.exists(os.path.join(self.photo_dest, documentInfo[0])):
-			# Create folder to hold all images related to this job
-			os.mkdir(os.path.join(self.photo_dest, documentInfo[0]))
 
 		# Image request URL
 		documentUrl = self.baseURL + "documents/" + documentInfo[1]
@@ -230,13 +217,13 @@ class Parsable():
 		# Download image from requests
 		if document_response.status_code == 200:
 			# Save image with name: JobID_FieldID.jpeg in JobID folder
-			destinationName = self.photo_dest + documentInfo[0] + "/" + documentInfo[0] + "_" + documentInfo[2] + ".jpeg"
+			destinationName = os.path.join(self.photo_dest, documentInfo[0], (documentInfo[0] + "_" + documentInfo[1] + ".jpeg"))
 			
 			# w - write and b - binary (images)
 			with open(destinationName, "wb") as x:
 				x.write(document_response.content)
 		else:
-			logging.error(response.status_code + " - Image GET Request Unsuccessful!")
+			logging.error(document_response.status_code + " - Image GET Request Unsuccessful!")
 
 if __name__ == "__main__":
 	try:
@@ -251,8 +238,10 @@ if __name__ == "__main__":
 			for job in jobs_list:
 				# Get job data call
 				job_data = parsable.get_job_data(job)
-				# Get a list of all document IDs in job
-				document_id_list = parsable.get_all_document_ids(job_data, job["lookupId"])
+				# Make sure job_data is not NoneType (Empty) (Job not already downloaded) 
+				if job_data:
+					# Get all document IDs in job
+					parsable.get_all_document_ids(job_data, job["lookupId"])
 		else:
 			logging.info("Empty Job List")
 

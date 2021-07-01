@@ -4,8 +4,8 @@ from os.path import expanduser
 import logging
 import time
 
+#Change to Directory
 os.chdir('/Users/ansonlin/Desktop')
-logFile = os.getcwd() + "/Near_Miss_Photos/" + "LogFile.log"
 
 # If Python Images Folder doesn't exist create it
 if not os.path.isdir(os.path.join(os.getcwd(), "Near_Miss_Photos")):
@@ -217,7 +217,7 @@ class Parsable():
 		# Download image from requests
 		if document_response.status_code == 200:
 			# Save image with name: JobID_FieldID.jpeg in JobID folder
-			destinationName = self.photo_dest + "/" + documentInfo[0] + "/" + documentInfo[0] + "_" + documentInfo[1] + ".jpeg"
+			destinationName = os.path.join(self.photo_dest, documentInfo[0], (documentInfo[0] + "_" + documentInfo[1] + ".jpeg"))
 			
 			# w - write and b - binary (images)
 			with open(destinationName, "wb") as x:
